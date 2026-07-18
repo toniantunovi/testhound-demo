@@ -1,0 +1,9 @@
+case: TC-0008
+status: failed
+executed_by: marco
+executed_at: 2026-07-18T21:04:17Z
+source: manual
+history:
+- at: 2026-07-18T21:04:17Z
+  status: failed
+  by: marco

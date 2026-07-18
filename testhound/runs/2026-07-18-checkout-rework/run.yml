@@ -1,0 +1,20 @@
+id: 2026-07-18-checkout-rework
+name: Checkout rework
+configuration:
+- chromium-desktop
+description: Targeted pass over the checkout suite
+includes:
+  mode: suite
+  suites:
+  - checkout
+  cases:
+  - TC-0007
+  - TC-0008
+  - TC-0009
+  - TC-0010
+  - TC-0011
+  - TC-0014
+assignee: priya
+state: complete
+created: 2026-07-18T21:04:17Z
+updated: 2026-07-18T21:04:17Z

@@ -1,0 +1,9 @@
+id: browsers
+name: Browsers
+options:
+- id: chromium-desktop
+  name: Chromium · Desktop
+- id: firefox-desktop
+  name: Firefox · Desktop
+- id: webkit-mobile
+  name: WebKit · Mobile

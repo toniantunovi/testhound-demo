@@ -1,0 +1,15 @@
+id: 2026-07-18-smoke-nightly
+name: Smoke nightly
+milestone: v2-4-release
+configuration:
+- chromium-desktop
+- webkit-mobile
+includes:
+  mode: filter
+  query: type:smoke OR tag:smoke
+  cases:
+  - TC-0001
+assignee: marco
+state: complete
+created: 2026-07-18T21:04:17Z
+updated: 2026-07-18T21:04:17Z

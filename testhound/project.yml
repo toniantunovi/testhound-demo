@@ -1,0 +1,17 @@
+name: Acme Shop
+version: 1
+root: testhound
+next_case_id: 32
+priorities:
+- low
+- medium
+- high
+- critical
+case_types:
+- functional
+- regression
+- smoke
+- e2e
+- negative
+- a11y
+- perf

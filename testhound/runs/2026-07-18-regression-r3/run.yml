@@ -1,0 +1,22 @@
+id: 2026-07-18-regression-r3
+name: Regression R3
+milestone: v2-4-release
+configuration:
+- chromium-desktop
+description: Full regression before v2.4
+includes:
+  mode: filter
+  query: suite:checkout OR tag:p1
+  cases:
+  - TC-0001
+  - TC-0007
+  - TC-0008
+  - TC-0009
+  - TC-0010
+  - TC-0011
+  - TC-0014
+  - TC-0021
+assignee: marco
+state: in_progress
+created: 2026-07-18T21:04:17Z
+updated: 2026-07-18T21:04:17Z
