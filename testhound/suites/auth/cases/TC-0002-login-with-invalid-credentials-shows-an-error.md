@@ -10,9 +10,14 @@ tags:
 - auth
 - negative
 automation:
-  state: none
+  state: linked
+  specs:
+  - tests/auth/login-with-invalid-credentials-shows-an-error.spec.ts
+  last_synced: 2026-07-19T17:00:54Z
+  source_hash: a1af74
+  generator: claude-code
 created: 2026-06-01T09:00:00Z
-updated: 2026-07-05T10:22:00Z
+updated: 2026-07-19T17:00:54Z
 ---
 
 ## Preconditions

@@ -1,2 +1,7 @@
 # TestHound derived cache (rebuildable from files)
 testhound/.testhound/
+
+# Node / Playwright
+node_modules/
+/test-results/
+/playwright-report/

@@ -6,6 +6,13 @@ links:
   generated_at: 2026-07-19T11:45:53Z
   source_hash: 2fd785
   state: linked
+- case: TC-0002
+  specs:
+  - path: tests/auth/login-with-invalid-credentials-shows-an-error.spec.ts
+  generator: claude-code
+  generated_at: 2026-07-19T17:00:54Z
+  source_hash: a1af74
+  state: linked
 - case: TC-0008
   specs:
   - path: tests/checkout/remove-item-from-cart.spec.ts
@@ -19,4 +26,11 @@ links:
   generator: claude-code
   generated_at: 2026-07-19T12:19:59Z
   source_hash: f52a42
+  state: linked
+- case: TC-0032
+  specs:
+  - path: tests/search/search-with-no-matches-shows-an-empty-state-message.spec.ts
+  generator: claude-code
+  generated_at: 2026-07-19T16:48:12Z
+  source_hash: ca0113
   state: linked

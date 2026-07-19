@@ -1,13 +1,16 @@
 case: TC-0008
 status: passed
 executed_by: playwright
-executed_at: 2026-07-19T12:33:30Z
+executed_at: 2026-07-19T16:59:01Z
 source: automated
-elapsed: 508ms
+elapsed: 269ms
 history:
 - at: 2026-07-18T21:04:17Z
   status: failed
   by: marco
 - at: 2026-07-19T12:33:30Z
+  status: passed
+  by: playwright
+- at: 2026-07-19T16:59:01Z
   status: passed
   by: playwright
