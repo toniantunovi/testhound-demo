@@ -3,6 +3,7 @@ name: Browsers
 options:
 - id: chromium-desktop
   name: Chromium · Desktop
+  playwright_project: chromium
 - id: firefox-desktop
   name: Firefox · Desktop
 - id: webkit-mobile
