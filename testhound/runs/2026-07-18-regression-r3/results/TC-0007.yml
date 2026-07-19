@@ -1,9 +1,13 @@
 case: TC-0007
 status: passed
-executed_by: marco
-executed_at: 2026-07-18T21:04:17Z
-source: manual
+executed_by: playwright
+executed_at: 2026-07-19T12:33:30Z
+source: automated
+elapsed: 437ms
 history:
 - at: 2026-07-18T21:04:17Z
   status: passed
   by: marco
+- at: 2026-07-19T12:33:30Z
+  status: passed
+  by: playwright
