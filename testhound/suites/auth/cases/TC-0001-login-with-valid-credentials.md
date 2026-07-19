@@ -14,11 +14,11 @@ automation:
   state: linked
   specs:
   - tests/auth/login-with-valid-credentials.spec.ts
-  last_synced: 2026-07-05T10:22:00Z
+  last_synced: 2026-07-19T11:45:53Z
   source_hash: 2fd785
   generator: claude-code
 created: 2026-06-01T09:00:00Z
-updated: 2026-07-05T10:22:00Z
+updated: 2026-07-19T11:45:53Z
 ---
 
 ## Preconditions

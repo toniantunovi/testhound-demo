@@ -1,1 +1,8 @@
-links: []
+links:
+- case: TC-0001
+  specs:
+  - path: tests/auth/login-with-valid-credentials.spec.ts
+  generator: claude-code
+  generated_at: 2026-07-19T11:45:53Z
+  source_hash: 2fd785
+  state: linked
