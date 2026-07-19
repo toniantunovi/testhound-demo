@@ -6,6 +6,13 @@ links:
   generated_at: 2026-07-19T11:45:53Z
   source_hash: 2fd785
   state: linked
+- case: TC-0008
+  specs:
+  - path: tests/checkout/remove-item-from-cart.spec.ts
+  generator: claude-code
+  generated_at: 2026-07-19T12:46:50Z
+  source_hash: c7e6d6
+  state: linked
 - case: TC-0031
   specs:
   - path: tests/profile/update-profile-display-name.spec.ts

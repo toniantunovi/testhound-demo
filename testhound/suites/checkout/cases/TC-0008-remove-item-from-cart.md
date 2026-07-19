@@ -11,14 +11,14 @@ tags:
 - cart
 - checkout
 automation:
-  state: drifted
+  state: linked
   specs:
   - tests/checkout/remove-item-from-cart.spec.ts
-  last_synced: 2026-07-01T08:00:00Z
-  source_hash: '000000'
+  last_synced: 2026-07-19T12:46:50Z
+  source_hash: c7e6d6
   generator: claude-code
 created: 2026-06-01T09:00:00Z
-updated: 2026-07-05T10:22:00Z
+updated: 2026-07-19T12:46:50Z
 ---
 
 ## Preconditions
