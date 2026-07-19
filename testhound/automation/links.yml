@@ -6,3 +6,10 @@ links:
   generated_at: 2026-07-19T11:45:53Z
   source_hash: 2fd785
   state: linked
+- case: TC-0031
+  specs:
+  - path: tests/profile/update-profile-display-name.spec.ts
+  generator: claude-code
+  generated_at: 2026-07-19T12:19:59Z
+  source_hash: f52a42
+  state: linked

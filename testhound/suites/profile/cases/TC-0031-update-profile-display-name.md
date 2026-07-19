@@ -9,14 +9,14 @@ owner: priya
 tags:
 - profile
 automation:
-  state: drifted
+  state: linked
   specs:
   - tests/profile/update-profile-display-name.spec.ts
-  last_synced: 2026-07-01T08:00:00Z
-  source_hash: '000000'
+  last_synced: 2026-07-19T12:19:59Z
+  source_hash: f52a42
   generator: claude-code
 created: 2026-06-01T09:00:00Z
-updated: 2026-07-05T10:22:00Z
+updated: 2026-07-19T12:19:59Z
 ---
 
 ## Preconditions
