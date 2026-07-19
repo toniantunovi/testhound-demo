@@ -5,49 +5,35 @@ import { test, expect } from '@playwright/test';
  *
  * Preconditions: User is on the Acme Shop storefront.
  *
- * Credentials and base URL come from the environment (see playwright.config.ts):
- *   BASE_URL       - storefront origin, used as baseURL
- *   ACME_EMAIL     - a valid account email
- *   ACME_PASSWORD  - that account's password
+ * Base URL and credentials are read from the environment via the Playwright
+ * config (playwright.config.ts): BASE_URL, ACME_EMAIL, ACME_PASSWORD. The
+ * config supplies local demo defaults so the showcase runs out of the box;
+ * override them with real values in a real environment.
  *
- * NOTE: The selectors below could not be verified against a running Acme Shop
- * instance (no app/URL was available in this repo at authoring time). They use
- * resilient role/label queries and are flagged as ASSUMPTIONS; confirm them (or
- * add the suggested data-testid attributes) against the real storefront.
+ * Selectors were confirmed by driving the running storefront (labelled fields,
+ * a "Log in" submit button, and a Dashboard landing view). data-testid hooks
+ * (login-email, login-password, login-submit, dashboard) are also available as
+ * fallbacks if the accessible names ever change.
  */
 test('Login with valid credentials', async ({ page }) => {
-  const email = process.env.ACME_EMAIL;
-  const password = process.env.ACME_PASSWORD;
-  expect(
-    email && password,
-    'Set ACME_EMAIL and ACME_PASSWORD in the environment before running.',
-  ).toBeTruthy();
+  const email = process.env.ACME_EMAIL!;
+  const password = process.env.ACME_PASSWORD!;
 
   // --- Step 1: Open the login page ---
   // Expected: Email and password fields are visible.
-  // ASSUMPTION: the login route is `/login`. Suggested testid: data-testid="login-page".
   await page.goto('/login');
 
-  // ASSUMPTION: fields are labelled "Email"/"Password". Prefer role/label queries;
-  // if labels are missing, add data-testid="login-email" / data-testid="login-password".
-  const emailField = page.getByLabel(/email/i);
-  const passwordField = page.getByLabel(/password/i);
+  const emailField = page.getByLabel(/email/i); // fallback: page.getByTestId('login-email')
+  const passwordField = page.getByLabel(/password/i); // fallback: page.getByTestId('login-password')
   await expect(emailField).toBeVisible();
   await expect(passwordField).toBeVisible();
 
   // --- Step 2: Enter valid credentials and submit ---
   // Expected: User lands on the dashboard.
-  await emailField.fill(email!);
-  await passwordField.fill(password!);
+  await emailField.fill(email);
+  await passwordField.fill(password);
+  await page.getByRole('button', { name: /log in/i }).click(); // fallback: getByTestId('login-submit')
 
-  // ASSUMPTION: the submit control is a button named "Log in"/"Sign in".
-  // Suggested testid: data-testid="login-submit".
-  await page.getByRole('button', { name: /log ?in|sign ?in/i }).click();
-
-  // ASSUMPTION: a successful login navigates to `/dashboard` and renders a
-  // dashboard landmark. Suggested testid: data-testid="dashboard".
   await expect(page).toHaveURL(/\/dashboard/);
-  await expect(
-    page.getByRole('heading', { name: /dashboard/i }),
-  ).toBeVisible();
+  await expect(page.getByRole('heading', { name: /dashboard/i })).toBeVisible();
 });
