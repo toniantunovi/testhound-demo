@@ -41,3 +41,10 @@ links:
   generated_at: 2026-07-20T21:05:48Z
   source_hash: e716f6
   state: linked
+- case: TC-0040
+  specs:
+  - path: tests/checkout/zero-tax-region-yields-no-tax.spec.ts
+  generator: claude-code
+  generated_at: 2026-07-20T21:50:10Z
+  source_hash: 9f05b5
+  state: linked

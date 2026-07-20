@@ -12,9 +12,14 @@ tags:
 - tax
 - p1
 automation:
-  state: none
+  state: linked
+  specs:
+  - tests/checkout/zero-tax-region-yields-no-tax.spec.ts
+  last_synced: 2026-07-20T21:50:10Z
+  source_hash: 9f05b5
+  generator: claude-code
 created: 2026-07-20T10:00:00Z
-updated: 2026-07-20T10:00:00Z
+updated: 2026-07-20T21:50:10Z
 ---
 
 ## Preconditions
