@@ -7,11 +7,18 @@ type: functional
 status: draft
 owner: lena
 tags:
-  - search
-  - coverage-gap
-  - likely-bug
+- search
+- coverage-gap
+- likely-bug
+automation:
+  state: linked
+  specs:
+  - tests/search/search-matches-product-titles-only-not-descriptions-or-ids.spec.ts
+  last_synced: 2026-07-20T21:55:37Z
+  source_hash: 2ebdeb
+  generator: claude-code
 created: 2026-07-19T00:00:00Z
-updated: 2026-07-19T00:00:00Z
+updated: 2026-07-20T21:55:37Z
 ---
 
 ## Preconditions

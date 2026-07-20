@@ -41,6 +41,13 @@ links:
   generated_at: 2026-07-20T21:05:48Z
   source_hash: e716f6
   state: linked
+- case: TC-0035
+  specs:
+  - path: tests/search/search-matches-product-titles-only-not-descriptions-or-ids.spec.ts
+  generator: claude-code
+  generated_at: 2026-07-20T21:55:37Z
+  source_hash: 2ebdeb
+  state: linked
 - case: TC-0040
   specs:
   - path: tests/checkout/zero-tax-region-yields-no-tax.spec.ts
