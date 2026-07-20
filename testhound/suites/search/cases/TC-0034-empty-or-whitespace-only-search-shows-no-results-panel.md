@@ -7,10 +7,17 @@ type: negative
 status: active
 owner: lena
 tags:
-  - search
-  - edge-case
+- search
+- edge-case
+automation:
+  state: linked
+  specs:
+  - tests/search/empty-or-whitespace-only-search-shows-no-results-panel.spec.ts
+  last_synced: 2026-07-20T21:05:48Z
+  source_hash: e716f6
+  generator: claude-code
 created: 2026-07-19T00:00:00Z
-updated: 2026-07-19T00:00:00Z
+updated: 2026-07-20T21:05:48Z
 ---
 
 ## Preconditions
