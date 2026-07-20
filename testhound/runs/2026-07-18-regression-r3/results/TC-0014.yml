@@ -1,9 +1,9 @@
 case: TC-0014
 status: passed
 executed_by: playwright
-executed_at: 2026-07-19T16:59:01Z
+executed_at: 2026-07-20T21:44:04Z
 source: automated
-elapsed: 640ms
+elapsed: 567ms
 history:
 - at: 2026-07-18T21:04:17Z
   status: passed
@@ -12,5 +12,8 @@ history:
   status: passed
   by: playwright
 - at: 2026-07-19T16:59:01Z
+  status: passed
+  by: playwright
+- at: 2026-07-20T21:44:04Z
   status: passed
   by: playwright
